@@ -1,0 +1,38 @@
+#include <iostream>
+#include<iomanip>
+using namespace std;
+class student{
+    private:
+    string name;
+    int rollno;
+    int prn;
+     public:
+     void setstudent(string n,int r,int p){
+        name=n;
+        rollno=r;
+        prn=p;
+    }
+    void display()
+    {
+        cout<<"Name:"<<name<<endl;
+        cout<<"Rollno:"<<rollno<<endl;
+        cout<<"Prn:"<<prn<<endl;
+        }
+};
+    int main()
+    { 
+        student s;
+        s.setstudent ("keerti",40,2025179);
+        s.display();
+        return 0;
+    }    
+
+
+
+output
+Name:keerti
+Rollno:40
+Prn:2025179
+
+
+=== Code Execution Successful ===
