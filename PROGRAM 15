@@ -1,0 +1,41 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include<iomanip>
+using namespace std;
+
+class employee{
+private:
+float basicsalary;
+float grosssalary;
+float TA;
+float DA;
+public: 
+ void setsalary(){
+     cout<<" enter basicsalary"<<endl;
+cin>>basicsalary;
+TA=basicsalary*0.15;
+DA=basicsalary*0.3;
+grosssalary=TA+DA+basicsalary;
+}
+void display();
+};
+void employee::display()
+{
+    cout<<"enter grosssalary"<<grosssalary<<endl;
+}
+int main (){
+    employee r;
+    r.setsalary();
+    r.display();
+    return 0;
+    }
+
+
+output
+ enter basicsalary
+7000
+enter grosssalary10150
+
+
+=== Code Execution Successful ===
+
