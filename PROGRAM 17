@@ -1,0 +1,51 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+
+class student{
+    private:
+    int rollno=1;
+    int marks=2;
+    public:
+    void setstudent(){
+    cout<<"enter the rollno"<<"enter the marks"<<endl;
+    cin>>rollno;
+    cin>>marks;
+    }
+void display(){
+    cout<<"enter number of rollno"<<rollno<<endl;
+    cout<<"enter number of marks"<<marks<<endl;
+}    
+};
+int main(){
+    int n;
+    cout<<"number of students"<<"student"<<endl;
+    cin>>n;
+    student s[n];
+    cout<<"enter studentdisplay"<<endl;
+    for(int i=0;i<n;i++){
+        s[i].setstudent();
+    }    
+     for(int i=0;i<n;i++){
+        s[i].display();
+     }
+    return 0;
+}
+
+output
+number of studentsstudent
+5
+enter studentdisplay
+enter the rollnoenter the marks
+5
+7
+enter the rollnoenter the marks
+8
+9
+enter the rollnoenter the marks
+6
+7
+
+
+
+
