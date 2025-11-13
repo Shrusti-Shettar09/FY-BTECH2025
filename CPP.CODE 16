@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+int main() {
+int n;
+cout << "Enter number: ";
+cin >> n;
+try {
+if(n < 0) throw "Negative not allowed";
+if(n > 12) throw 1;
+int fact = 1;
+for(int i=1;i<=n;i++) fact*=i;
+cout << "Factorial: " << fact;
+} catch(const char* msg){
+cout << msg;
+} catch(int x){
+cout << "Value too large";
+}
+return 0;
+}
+
+OUTPUT
+Enter number: 6
+Factorial: 720
+
+=== Code Execution Successful ===
