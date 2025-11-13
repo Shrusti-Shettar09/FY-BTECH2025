@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+class Sample {
+int x;
+public:
+void getData(){ cout << "Enter number: "; cin >> x; }
+void operator -(){ x = -x; }
+
+void show(){ cout << "Value: " << x << endl; }
+};
+int main() {
+Sample s;
+s.getData();
+-s;
+s.show();
+return 0;
+}
+
+
+OUTPUT
+Enter number: 5
+Value: -5
+
+
+=== Code Execution Successful ===
