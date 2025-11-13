@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+class Person {
+public:
+string name;
+void getName(){ cout << "Enter name: "; cin >> name; }
+};
+class Student: public Person {
+public:
+int roll;
+void getRoll(){ cout << "Enter roll: "; cin >> roll; }
+void display(){ cout << name << ", " << roll << endl; }
+};
+int main() {
+Student s;
+s.getName(); s.getRoll(); s.display();
+return 0;
+}
+
+
+OUTPUT
+Enter name: CHITRA
+Enter roll: 22
+CHITRA, 22
+
+
+=== Code Execution Successful ===
