@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+class Student {
+int roll;
+string name, prn;
+float total;
+public:
+Student(int r, string n, string p, float t) {
+roll = r; name = n; prn = p; total = t;
+}
+void result() {
+cout << "Percentage: " << (total/5) << "%" << endl;
+}
+};
+int main() {
+Student s(1, "Raj", "PRN123", 400);
+s.result();
+return 0;
+}
+
+
+OUTPUT
+Percentage: 80%
+
+
+=== Code Execution Successful ===
