@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+float area(float l, float b){ return l*b; }
+float area(float base, float height, int){ return 0.5*base*height; }
+float area(float r){ return 4*3.14*r*r; }
+int main() {
+cout << "Rectangle: " << area(5,4) << endl;
+cout << "Triangle: " << area(5,4,1) << endl;
+cout << "Sphere: " << area(3) << endl;
+return 0;
+}
+
+
+OUTPUT
+Rectangle: 20
+Triangle: 10
+Sphere: 113.04
+
+
+=== Code Execution Successful ===
