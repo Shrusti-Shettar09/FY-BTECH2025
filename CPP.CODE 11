@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+class Employee {
+public:
+string name;
+void getName(){ cout << "Enter name: "; cin >> name; }
+};
+class Salary {
+public:
+float sal;
+void getSal(){ cout << "Enter salary: "; cin >> sal; }
+};
+class Manager : public Employee, public Salary {
+public:
+void show(){ cout << "Name: " << name << ", Salary: " << sal << endl; }
+};
+
+int main() {
+Manager m;
+m.getName(); m.getSal(); m.show();
+return 0;
+}
+
+
+output
+Enter name: Shradda
+Enter salary: 50,000
+Name: Shradda, Salary: 50
+
+
+=== Code Execution Successful ===
