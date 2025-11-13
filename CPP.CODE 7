@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+class Book {
+string name, author;
+float price;
+int isbn;
+public:
+Book(string n, string a, float p, int i) {
+name=n; author=a; price=p; isbn=i;
+}
+Book(Book &b) {
+name=b.name; author=b.author; price=b.price; isbn=b.isbn;
+}
+void display() {
+cout << name << ", " << author << ", " << price << ", " << isbn <<
+endl;
+}
+};
+int main() {
+Book b1("C++", "Bjarne", 550, 101);
+Book b2(b1);
+b1.display();
+b2.display();
+return 0;
+}
+
+
+OUTPUT
+C++, Bjarne, 550, 101
+C++, Bjarne, 550, 101
+
+
+=== Code Execution Successful ===
