@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+
+class student{
+    private:
+    string name;
+    int rollno;
+    long long prn;
+    public:
+    void getdetails(){
+    cout<<"enter student name"<<endl;
+    cin>>name;
+    cout<<"enter student rollno"<<endl;
+    cin>>rollno;
+    cout<<"enter student prn"<<endl;
+    cin>>prn;
+    }
+    
+    void display(){
+        cout<<"Name:"<<name<<endl;
+        cout<<"Rollno:"<<rollno<<endl;
+        cout<<"Prn:"<<prn<<endl;
+    }
+};
+     int main(){
+         student s;
+         s.getdetails();
+         s.display();
+         return 0;
+     }
+     
+
+
+output
+enter student name
+shradda
+enter student rollno
+22
+enter student prn
+2025179
+Name:shradda
+Rollno:22
+Prn:2025179
+
+
+=== Code Execution Successful ===
