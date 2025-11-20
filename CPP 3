@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+
+class my{
+    private:
+    int count;
+    int sum;
+    public:
+    friend void getsum();
+};
+void getsum(){
+     my object;
+    object.sum=0;
+    object.count=0;
+    int i;
+    for(i=100;i<=200;i++){
+        if(i%9==0){
+            object.count++;
+            object.sum=object.sum+i;
+        }
+    }
+    cout<<"number of integers between 100 and 200 divisible by 9 is:-"<<object.count<<endl;
+    cout<<"sum of these integers is:-"<<object.sum<<endl;
+}
+int main(){
+    getsum();
+    return 0;
+}
+
+OUTPUT
+number of integers between 100 and 200 divisible by 9 is:-11
+sum of these integers is:-1683
+
+
+=== Code Execution Successful ===
